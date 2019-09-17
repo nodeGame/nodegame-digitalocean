@@ -1,0 +1,2 @@
+## Notes for Maintener of the Droplet distribution.
+- The installer script nodegame-installer is modified to include the flag --unsafe-perm for root.
