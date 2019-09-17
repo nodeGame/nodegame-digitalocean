@@ -1,0 +1,37 @@
+nodeGame Droplet Readme
+
+You are running nodeGame stable version from folder: ~/nodegame-stable
+
+More information, including documentation and forum, can be found at the website: https://nodegame.org
+
+
+Mini FAQ:
+
+- What is the address of my server?
+
+You can find it in your Digital Ocean account in file NODEGAME_WELCOME.
+
+
+- How do I upload my game to the server?
+
+There are a few options, all involves using the shell command. The easiest one is to use git. You could upload your code to a git repository (e.g., github or bitbucket) and pull the code from there. Alternatively, you can use some bash comands such as scp or rsync. You can find more info online about those.
+
+
+- Why do I see a blank page if I try to connect to my game?
+
+You might have specified the wrong channel (or no channel at all). This can happen if you did not use the nodegame create-game utility, but copied your game from an existing one. To fix it, inside your game folder, check file public/js/index.js, find the line containing method "node.connect" and make sure that the argument matches the name of your channel. The name of the channel is specified inside file channel/channe.settings.js, and it usually matches the name of your game. For example, if your game is named ultimatum, the name of the channel is '/ultimatum/'. So the line should be: node.connect('/ultimatum').
+
+
+- What is pm2 and why should I use it?
+
+Pm2 is a process manager. It makes sure the server is running even after you close the terminal and it will automatically restart it in case of a fatal error. It is recommended that you launch your node server with pm2 instead.
+
+
+- OK, I used pm2, but where is the output of my server now?
+
+Pm2 saves the logs under ~/.pm2/logs
+
+You can find more information about pm2 here: 
+
+http://pm2.keymetrics.io/docs/usage/quick-start/
+

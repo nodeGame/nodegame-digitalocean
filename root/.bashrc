@@ -109,7 +109,7 @@ export PATH=$PATH:$NODEPATH
 echo ""
 FILE=NODEGAME_WELCOME
 if [ -f "$FILE" ]; then
-    echo "nodeGame welcome-instructions in $FILE."
+    echo "nodeGame welcome instructions in $FILE."
     echo ""
 else    
     sh /opt/nodegame/nodegame-welcome.sh | tee "$FILE"
