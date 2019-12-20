@@ -115,10 +115,3 @@ else
     sh /opt/nodegame/nodegame-welcome.sh | tee "$FILE"
 fi
 
-## From now on only on first start.
-cd nodegame-v5.6.1/
-pm2 start launcher.js -- --default=ultimatum
-
-## Replace current .bashrc with skeleton.
-cp -f /etc/skel/.bashrc /root/.bashrc
-

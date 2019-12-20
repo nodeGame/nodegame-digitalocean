@@ -1,3 +1,18 @@
 #!/bin/sh
 
-cat nodegame-text
+cat <<EOF
+
+███╗   ██╗ ██████╗ ██████╗ ███████╗ ██████╗  █████╗ ███╗   ███╗███████╗
+████╗  ██║██╔═══██╗██╔══██╗██╔════╝██╔════╝ ██╔══██╗████╗ ████║██╔════╝
+██╔██╗ ██║██║   ██║██║  ██║█████╗  ██║  ███╗███████║██╔████╔██║█████╗
+██║╚██╗██║██║   ██║██║  ██║██╔══╝  ██║   ██║██╔══██║██║╚██╔╝██║██╔══╝
+██║ ╚████║╚██████╔╝██████╔╝███████╗╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗
+╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝
+
+Welcome to DigitalOcean's One-Click NodeGame Droplet.
+To keep this Droplet secure, the UFW firewall is enabled.
+All ports are BLOCKED except 22 (SSH), 80 (HTTP), and 443 (HTTPS).
+
+More info: https://github.com/nodeGame/nodegame/wiki/nodeGame-on-DigitalOcean
+*****************************************************************************
+EOF
