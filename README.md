@@ -6,6 +6,7 @@ Digital Ocean Market Place.
 ## To Update.
 
 1 - Start latest after-cleaning snapshot of nodeGame.
+1 - Update file /opt/nodegame/welcome\_nodegame.sh to the latest version number
 1 - Update file /opt/nodegame/.bashrc to the latest version number
 1 - Copy file /root/.bashrc inside droplet root folder
 1 - Get latest installer file: wget nodegame.org/nodegame-installer.js
