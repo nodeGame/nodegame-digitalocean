@@ -5,7 +5,7 @@ Digital Ocean Market Place.
 
 ## To Update.
 
-1 - Start latest before-cleaning snapshot of nodeGame.
+1 - Start latest after-cleaning snapshot of nodeGame.
 1 - Update file /opt/nodegame/.bashrc to the latest version number
 1 - Copy file /root/.bashrc inside droplet root folder
 1 - Get latest installer file: wget nodegame.org/nodegame-installer.js
@@ -21,3 +21,5 @@ nodegame root.
 1 - Remove NODEGAMEi\_WELCOME from home directory.
 1 - Run cleanup.sh script (possibly need to re-download).
 1 - Run img\_check.sh script (clear var files not cleared).
+1 - Remove any spurious file in /var/log/ as reported by the check script.
+1 - Take two snapshots! In case the vendor portal loses one.
