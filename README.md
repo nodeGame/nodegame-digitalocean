@@ -8,6 +8,7 @@ Digital Ocean Market Place.
 1 - Start latest before-cleaning snapshot of nodeGame.
 1 - Update file /opt/nodegame/.bashrc to the latest version number
 1 - Copy file /root/.bashrc inside droplet root folder
+1 - Get latest installer file: wget nodegame.org/nodegame-installer.js
 1 - Install latest DEV version
 1 - Copy conf/servernode.js file from previous Droplet into current
 one (set port 80, and remove homePage).
@@ -17,6 +18,6 @@ one (set port 80, and remove homePage).
 1 - Try Game.
 1 - Cleanup: data/ and log/ folder in ultimatum, and log/ folder in
 nodegame root.
-1 - Remove NODEGAME_WELCOME from home directory.
+1 - Remove NODEGAMEi\_WELCOME from home directory.
 1 - Run cleanup.sh script (possibly need to re-download).
 1 - Run img\_check.sh script (clear var files not cleared).
