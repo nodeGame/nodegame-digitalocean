@@ -23,4 +23,6 @@ nodegame root.
 1 - Run cleanup.sh script (possibly need to re-download).
 1 - Run img\_check.sh script (clear var files not cleared).
 1 - Remove any spurious file in /var/log/ as reported by the check script.
-1 - Take two snapshots! In case the vendor portal loses one.
+1 - Take one snapshot. 
+1 - Create a new droplet with that snapshot and test it.
+1 - Take a second snapshot! In case the vendor portal loses one.
