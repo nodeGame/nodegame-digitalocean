@@ -44,17 +44,23 @@ server {
 # server {
 #    listen 80;
 #    server_name YOUR_DOMAIN_NAME;
+#    # If you do not have a domain name, but just an IP, comment the previous
+#    # line and uncomment the following one.
+#    # server_name _;
 #    rewrite ^/(.*) https://YOUR_DOMAIN_NAME/$1 permanent;
 # }
 #
 # server {
-# 
+#
 #         listen               443 ssl;
 #         server_name          YOUR_DOMAIN_NAME;
+#         # If you do not have a domain name, but just an IP, comment the
+#         # previous line and uncomment the following one.
+#         # server_name _;
 #         ssl_certificate      PATH_TO_YOUR_CERTIFICATE;
 #         ssl_certificate_key  PATH_TO_YOUR_SECRET_KEY;
-# 
-# 
+#
+#
 # 	location / {
 #                 proxy_pass http://localhost:8080/;
 #                 proxy_http_version 1.1;
@@ -63,6 +69,5 @@ server {
 #                 proxy_set_header Host $host;
 #                 proxy_cache_bypass $http_upgrade;
 #         }
-# 
+#
 # }
-
